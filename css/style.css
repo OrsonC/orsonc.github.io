@@ -211,7 +211,7 @@
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-attachment: fixed;
-		background-image:url(image/banner.jpg);
+		background-image: url(../image/banner.jpg);
 		height: 100%;
 	}
 
@@ -237,7 +237,7 @@
 
 	/* Features Panel */
 	.featPanel {
-		background-image: url(./image/homeBack.png);
+		background-image: url(../image/homeBack.png);
 	}
 
 	.featGrid {
@@ -282,7 +282,7 @@
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-attachment: fixed;
-		background-image:url(image/banner-rev.jpg);
+		background-image: url(../image/banner-rev.jpg);
 		height: 120vh;
 	}
 
@@ -397,28 +397,28 @@
 		}
 
 		.linkedin:hover {
-			background: url("./image/iconL1.png") center;
+			background: url("../image/iconL1.png") center;
 			background-size: cover;
 
 			transform: scale(1.2);
 		}
 
 		.resume:hover {
-			background: url("./image/iconR1.png") center;
+			background: url("../image/iconR1.png") center;
 			background-size: cover;
 
 			transform: scale(1.2);
 		}
 
 		.gdsite:hover {
-			background: url("./image/iconD1.png") center;
+			background: url("../image/iconD1.png") center;
 			background-size: cover;
 
 			transform: scale(1.2);
 		}
 
 		.instagram:hover {
-			background: url("./image/iconI1.png") center;
+			background: url("../image/iconI1.png") center;
 			background-size: cover;
 
 			transform: scale(1.2);
