@@ -1,0 +1,492 @@
+	html, body, .container {
+		margin: 0;
+		padding: 0;
+	}
+
+	body {
+		display: block;
+		font-family: "Futura PT", "Nunito", sans-serif;
+		color: #000000;
+		background-color: #ffffff;
+		position: absolute;
+		margin: 0 0 0 0;
+	}
+
+	/* Type Settings */
+
+	/* Page Title */
+	h1 {
+		font-family: "Futura PT", "Nunito", sans-serif;
+		font-weight: 600;
+		font-size: 70pt;
+		color: #000000;
+		line-height: 90%;
+		text-align: center;
+	}
+
+	/* Page Subtitle */
+	h2 {
+		font-family: "Futura PT", "Nunito", sans-serif;
+		font-weight: 400;
+		font-size: 30pt;
+		color: #000000;
+		text-align: center;
+	}
+
+	/* Title Links */
+	h3 {
+		font-family: "Futura PT", "Nunito", sans-serif;
+		font-weight: 500;
+		font-size: 25pt;
+		color: #000000;
+		text-align: center;
+	}
+
+	.h3Bold {
+		font-weight: 700;
+	}
+
+	/* Section Titles */
+	h4 {
+		font-family: "Futura PT", "Nunito", sans-serif;
+		font-weight: 600;
+		font-size: 30pt;
+		color: #000000;
+		text-align: center;
+	}
+
+	/* Links Titles */
+	h5 {
+		font-family: "Futura PT", "Nunito", sans-serif;
+		font-weight: 600;
+		font-size: 18pt;
+		color: #7F7F7F;
+		text-align: center;
+	}
+
+	/* Specialty Font Colors */
+	#nnBlue {
+		color: #3D94C6;
+	}
+
+	#nnTeal {
+		color: #1f838c;
+	}
+
+	#tbYellow {
+		color: #f9e530;
+	}
+
+	#tbGreen {
+		color: #80c342;
+	}
+
+	#tbBlue {
+		color: #3bc6ef;
+	}
+
+	#tbRed {
+		color: #ed1f24;
+	}
+
+	#tbOrange {
+		color: #dd7f3c;
+	}
+
+	#tbCerulean {
+		color: #6acad7;
+	}
+
+	#tbPink {
+		color: #cb7cb4;
+	}
+
+	#hbRed {
+		color: #b62025;
+	}
+
+	#hbBlue {
+		color: #0062ab;
+	}
+
+	#ocOrange {
+		color: #FBA919;
+	}
+
+	#ocYellow {
+		color: #FCEE21;
+	}
+
+	#ocGreen {
+		color: #6DBE45;
+	}
+
+	#ocBlue {
+		color: #5CB2E4;
+	}
+
+	#ocTeal {
+		color: #64C6BD;
+	}
+
+	#ocPink {
+		color: #D94779;
+	}
+
+	#ocPurple {
+		color: #69297C;
+	}
+
+	/* Main Content */
+	p {
+		font-family: "Futura PT", "Nunito", sans-serif;
+		font-weight: 350;
+		font-size: 17pt;
+		color: #000000;
+		padding-left: 8vw;
+		padding-right: 8vw;
+	}
+
+	.mobileCapt p {
+		font-size: 12pt;
+		font-weight: 700;
+		text-align: center;
+	}
+
+	a {
+		color: #DC4949;
+		text-decoration: none;
+	}
+
+	.red {
+		color: #DC4949;
+	}
+
+	.boldh1 {
+		font-weight: 700;
+	}
+
+	.boldh3 {
+		font-weight: 400;
+	}
+
+	.boldp {
+		font-weight: 700;
+		color: #DC4949;
+	}
+
+	.centerP {
+		text-align: center;
+	}
+
+	/* Navigation Bar */
+	.nav {
+		position: fixed;
+		list-style-type: none;
+		margin-top: 0;
+		margin-bottom: 0;
+		width: 100%;
+		padding: 0;
+		overflow: hidden;
+		background-color: #ffffff;
+		font-size: 16pt;
+		z-index: 5;
+		box-shadow: 0px 5px 15px #404040;
+	}
+
+	.navBlock {
+		transform: scale(1.0);
+		transform-origin: bottom left;
+		transition: transform 0.2s ease;
+	}
+
+	.navBlock:hover {
+		transform: scale(1.05);
+	}
+
+	.navBlock img {
+		float: left;
+		max-width: 100%;
+		height: 35px;
+		margin: 12px 0 10px 4vw;
+	}
+
+	.navBlock p {
+		font-style: extra-bold;
+		padding-left: 0;
+		float: left;
+		text-decoration: none;
+		margin: 8px 0 5px 1vw;
+		color:  #DC4949;
+		font-size: 26pt;
+		font-weight: 700;
+		padding: 0;
+	}
+
+	#menuIcon {
+		display: none;
+	}
+
+	.navLinks {
+		display: flex;
+		float: right;
+	}
+
+	.navLinks a span {
+		font-weight: 600;
+	}
+
+	.navLinks a {
+		margin-right: 14px;
+		display: block;
+		font-weight: 500;
+		color: #000000;
+		text-align: center;
+		padding: 16px;
+		transform: scale(1.0);
+		transition: all 0.2s ease;
+	}
+
+	.navLinks a:hover {
+		color:  #DC4949;
+		transform: scale(1.1);
+		transition: all 0.2s ease;
+	}
+
+	/* @Media Queries for navigation bar to show icon when under 900px */
+	@media screen and (max-width: 814px) {
+		.navBlock img {
+			margin-top: 18px;
+			height: 50px;
+		}
+
+		.navBlock p {
+			margin-top: 12px;
+			font-size: 38pt;
+		}
+
+		#menuIcon {
+			margin: 15px 4vw 0 0;
+			display: block;
+			float: right;
+			z-index: 3;
+		}
+
+		#menuIcon img {
+			height: 50px;
+			transition: transform 0.2s ease;
+		}
+
+		#menuIcon img:hover {
+			transform: scale(1.1);
+		}
+
+		.navLinks {
+			margin: 60px 0px 10px 0;
+			display: block;
+		}
+
+		.navLinks a {
+			padding: 10px;
+			display: none;
+		}
+
+		.nav.expanded {
+			position: fixed;
+		}
+
+		.nav.expanded a {
+			font-size: 24pt;
+			float: none;
+			display: block;
+			text-align: left;
+		}
+	}
+
+	/* Body Grid */
+	.bodyGrid {
+		display: grid;
+		grid-template-columns: minmax(0px, 100%);
+	}
+
+	.bodyGrid img {
+		width: 100%;
+	}
+
+	/* Title Panel */
+	.titlePanel {
+		padding-top: 55px;
+	}
+
+	.titlePanel h1 {
+		margin-bottom: 0;
+	}
+
+	.titlePanel h2 {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.titlePanel h3 {
+		margin-top: 0;
+	}
+
+	.titlePanel p {
+	}
+
+	.titlePanel a {
+		text-decoration: none;
+	}
+
+	.titlePanel img {
+		margin-top: -3vw;
+	}
+
+	/* OCD Demos */
+	.ocdDemo {
+		padding: 1em;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.ocdDemo p {
+		font-size: 35pt;
+	}
+
+	.ocdImgDemo {
+  	display: flex;
+  	flex-direction: column;
+  	justify-content: center;
+  	align-items: center;
+		position: relative;
+	}
+
+	.ocdImgDemo img {
+		width: 500px;
+		box-shadow: 5px 5px 15px #000000;
+	}
+
+	#imgDemoCapt {
+		background-color: #DC4949;
+		opacity: 0.9;
+	}
+
+	#imgDemoCapt p {
+		font-weight: 400;
+		font-size: 24pt;
+		text-align: left;
+		margin-top: 1em;
+		padding: 1em;
+		color: #FFFFFF;
+	}
+
+	.ocdIconDemo {
+  	display: flex;
+  	flex-direction: column;
+  	justify-content: center;
+  	align-items: center;
+		position: relative;
+		background: url("../image/ocd/icon1.png") center;
+		background-size: cover;
+
+		transform: scale(1.0);
+		transition: all 0.2s ease-in;
+	}
+
+	/* @Media Queries for non-mobile devices */
+	@media screen and (min-width: 1281px) {
+		/* Text */
+		.boldp {
+			color: #000000;
+			font-weight: 700;
+			transition: color 0.2s ease;
+		}
+
+		.boldp:hover {
+			color: #DC4949;
+			transition: color 0.2s ease;
+		}
+
+		a {
+			color: #000000;
+			text-decoration: none;
+		}
+
+		a:hover {
+			color: #DC4949;
+			transition: color 0.2s ease;
+		}
+
+		/* Demoes */
+		.ocdImgDemo:after {
+			display: flex;
+			width: 96%;
+			height: 96%;
+			align-items:flex-end;
+			font-weight: 400;
+			font-size: 35px;
+			text-align: left;
+			padding: 1vw;
+			content: attr(data-title) "\A" attr(data-capt);
+			white-space: pre-wrap;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			color: white;
+			background: #DC4949;
+			opacity: 0;
+			transition: all 0.2s ease;
+		}
+
+		.ocdImgDemo:hover:after {
+			transform: scale(0.8);
+			opacity: 0.9;
+		}
+
+		.mobileCapt {
+			display: none;
+		}
+
+		.ocdIconDemo {
+			width: 300px;
+			height: 300px;
+		}
+
+		.ocdIconDemo:hover {
+			background: url("../image/ocd/icon2.png") center;
+			background-size: cover;
+
+			transform: scale(1.2);
+		}
+
+		.projPanel a {
+			padding-left: 300px;
+			padding-right: 300px;
+		}
+	}
+
+	/* Other Links Panel */
+	.projPanel {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+
+		padding: 4em;
+	}
+
+	.projPanel a {
+		text-decoration: none;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.projPanel h5 {
+		text-align: center;
+		transition: all 0.2s ease;
+	}
+
+	.projPanel h5:hover {
+		color: #DC4949;
+	}
