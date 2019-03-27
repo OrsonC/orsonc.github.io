@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Trubadour | Orson Cheng</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="css/style2.css" type="text/css" rel="stylesheet">
+  <link href="favicon.ico" type="image/x-icon" rel="shortcut icon">
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+  <link href="https://anijs.github.io/lib/anicollection/anicollection.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navigation menu on top of every page -->
+  <div class="navBar">
+    <div class ="container">
+      <!-- Navigation bar -->
+      <div class="nav" id="navResponsive">
+        <!-- Logo -->
+        <div class="navBlock">
+          <a href="index.html"><img src="image/icon.png"/><p>ORSON CHENG</p></a>
+        </div>
+        <!-- Hamburger icon for mobile -->
+        <a href="javascript:void(0);" class="icon" id="menuIcon" onclick="navExpand()"><img src="image/hamIcon.png"/></a>
+        <div class="navLinks">
+          <!-- Navbar options -->
+          <a href="index.html">Home</a>
+          <a href="index.html#contact">Contact</a>
+          <a href="resume.pdf" target="_blank">Resume</a>
+          <a href="http://www.orsonchengdesign.com/" target="_blank">
+            Design Work</a>
+        </div>
+      </div>
+    <!-- Closing nav container -->
+    </div>
+  </div>
+
+  <!-- Content Grid -->
+  <div class="bodyGrid">
+
+    <!-- Title Panel -->
+    <div class="titlePanel">
+      <h1>Trubadour</h1>
+      <h2>Web App for Poetry</h2>
+      <img src="image/tbd/intro-banner.png" />
+    </div>
+
+    <!-- Gist Panel -->
+    <div class="gistPanel">
+      <h4>The Gist</h4>
+      <p>Trubadour was designed with the disinterested younger generation in mind.
+        As an ongoing project with <a href="https://www.greendoorlabs.com/" target= "_blank">
+        <span class="boldp">Green Door Labs</span></a> to inspire people to read
+        more poetry, Trubadour was designed to suggest poems to users based off of
+        their currently logged interests. To instill interest in poetry, which
+        oftentimes may be deemed dull, I wanted the audience to be able to
+        quickly find poems that may be of interest to them. This meant a quick and
+        non-intimidating process that would lead straight to the poem, and once
+        there, an experience that would keep them engaged within the poetry
+        itself. As such, I created an experience that would lead to the poetry
+        fast, and would keep the user engaged within the loop of poetry as the
+        program continued to learn about the user.</p>
+      <div data-anijs="if: scroll, on: window, do: fadeInUp animated, before: $scrollReveal">
+        <img src="image/tbd/scrs1.png" />
+      </div>
+      <div data-anijs="if: scroll, on: window, do: fadeInUp animated, before: $scrollReveal">
+        <img src="image/tbd/scrs2.png" />
+      </div>
+      <div data-anijs="if: scroll, on: window, do: fadeInUp animated, before: $scrollReveal">
+        <img src="image/tbd/scrs3.png" />
+      </div>
+    </div>
+
+    <!-- Problems Panel -->
+    <div class="probPanel">
+      <h4>UI/UX Problems</h4>
+      <p>The trend of <a href="https://www.cnn.com/2015/06/25/living/poetry-dead-poet-laureate-herrera-feat/index.html" target="_blank">
+        <span class="boldp">dwindling interest in poetry</span></a> is one that
+        has been <a href="https://www.washingtonpost.com/news/wonk/wp/2015/04/24/poetry-is-going-extinct-government-data-show/?noredirect=on&utm_term=.5b86fed91699" target="_blank">
+        <span class="boldp">well-documented</span></a>. With Trubadour, the whole
+        idea was to create something that would not only engage the youth (yes,
+        I'm using "youth") with poetry and inspire them to see how cool poetry can
+        be, but also be able to keep the users engaged with the tool on a
+        consistent basis. Starting with only an Excel sheet with fields populated
+        with the metadata of the poems, this task required a lot of creative
+        nudging but also allowed for a lot of room for me to work. While there are
+        websites that exist where collections of poems exist, none are very
+        interactive or very inviting to users without prior interest in poetry.
+        Trubadour seeks to provide an alternative to that.<br><br>The problems
+        that came with this project were to create a sleek interface that would
+        assist in getting the user to the poems they wanted to see quickly, assist
+        in generating interest in the poetry, and to bring the users consistently
+        back into the experience.</p>
+      <div data-anijs="if: scroll, on: window, do: fadeInUp animated, before: $scrollReveal">
+        <img src="image/tbd/problem.png" />
+      </div>
+    </div>
+
+    <!-- Solutions Panel -->
+    <div class="solPanel">
+      <h4>UI/UX Solutions</h4>
+      <p>To bring the users to the poetry that they wanted as quickly as possible,
+        I designed a process to locate poems that would be of the users' interests,
+        and that came in the form of the selection circle. This also served to
+        help generate interest in the poetry, but to add to that, we are currently
+        experimenting with adding an element to gamify the poems and to make the
+        app experience a social one to share with friends. These elements would
+        also aid in bringing the users back to the app again, creating a healthy
+        cycle of a network of people sharing poems with each other.</p>
+    </div>
+
+    <!-- Experience Flow Panel -->
+    <div class="xpfPanel">
+      <h4>Experience Flow</h4>
+      <p>Trubadour is designed to allow for an inviting and undaunting
+        experience to ease users into the world of poetry. The experience had to
+        require low commitment and very minimal amounts of decision making. I
+        didn't want the users to feel intimidated by a large amount of decisions
+        to make or have too many distractions from the experience of the poem's
+        text itself.<br><br>The crux of the experience, I felt, should be the
+        reading of poetry itself. Here in these user flow maps, it can be seen how
+        central the screens with poems on them are to the overall experience.</p>
+      <div data-anijs="if: scroll, on: window, do: fadeInUp animated, before: $scrollReveal">
+        <img src="image/tbd/xpFlow.png" />
+      </div>
+    </div>
+
+    <!-- Flash Card Graphic Panel -->
+    <div class="imgPanel">
+      <h4>Visual Design System</h4>
+      <p>One of the most important elements to the web app's design system is the
+        usage of color. Color is used to highlight items that can be interacted
+        with, and is used generously throughout the app. A crucial use of color is
+        in denoting the different ways that a user can interact with passages and
+        poems, while the yellow highlighting of text is used to denote UI elements
+        that the user can interact with to navigate between screens in the app. I
+        selected a palette of bright colors with a yellow <span id="tbYellow">
+        (#f9e530)</span>, green <span id="tbGreen">(#80c342)</span>,
+        blue <span id="tbBlue">(#3bc6ef)</span>, and a red <span id="tbRed">
+        (#ed1f24)</span> for my colors.</p>
+      <div data-anijs="if: scroll, on: window, do: fadeInUp animated, before: $scrollReveal">
+        <img src="image/tbd/vis1.png" />
+      </div>
+      <p>The selection circle is another central piece to the visual design. The user
+        begins their poetic experience in Trubadour with a ranking of four passages
+        select poems they resonate with. I wanted something that would be fun to
+        interact with, even if for a simple a function as selecting passages.</p>
+      <div data-anijs="if: scroll, on: window, do: fadeInUp animated, before: $scrollReveal">
+        <img src="image/tbd/vis2.png" />
+      </div>
+      <p>To aid in the navigation of the different pages of the app, I also
+        designed and implemented a tab system for navigation. A major part of the
+        problem is making the multitudinous places to navigate within the tool
+        compact and accessible. The idea was to make navigation seem deceptively
+        simple, and so after categorizing different functions into different
+        categories, I devised the tabbing system within the tool to make it easier
+        to navigate what I classified as three main sections to the tool.
+        The tabs are kept in a dock that is always visible over text, and
+        corresponds with the section that they lead to in terms of both color and
+        text alignment. The poem screen and tab are in an orange <span id="tbOrange">
+        (#dd7f3c)</span>, the mad libs in a cerulean <span id="tbCerulean">(#6acad7)</span>,
+        and the social tab and screen in a pink <span id="tbPink">(#cb7cb4)</span>.</p>
+      <div data-anijs="if: scroll, on: window, do: fadeInUp animated, before: $scrollReveal">
+        <img src="image/tbd/vis3.png" />
+      </div>
+    </div>
+
+    <!-- Other Projects Panel -->
+    <div class="projPanel">
+      <a href="index.html"><h5>Home</h5></a>
+      <a href="neuranode.html"><h5>Neuranode</h5></a>
+      <a href="nyehdao.html"><h5>Nyeh Dao!</h5></a>
+      <a href="views.html"><h5>VIEWS Puzzle Game</h5></a>
+      <a href="trubadour.html"><h5><span class="red">Trubadour</span></h5></a>
+      <a href="hoopbank.html"><h5>Hoop Bank</h5></a>
+      <a href="ocd.html"><h5>Orson Cheng Design</h5></a>
+    </div>
+
+  <!-- Closing Grid Div -->
+  </div>
+
+  <!-- To AniJS, thank you very muchj ;) -->
+  <script src="https://anijs.github.io/lib/anijs/anijs.js"></script>
+  <script src="https://anijs.github.io/lib/anijs/helpers/scrollreveal/anijs-helper-scrollreveal.js"></script>
+
+  <!-- Script for NavBar Icon -->
+  <script>
+    function navExpand() {
+      var x = document.getElementById("navResponsive");
+
+      if (x.className !== "navBlock") {
+        if (x.className === "nav") {
+          x.className += " expanded";
+        } else {
+          x.className = "nav";
+        }
+      }
+    }
+  </script>
+
+</body>
+
+</html>

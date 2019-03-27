@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Hoop Bank | Orson Cheng</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="css/style2.css" type="text/css" rel="stylesheet">
+  <link href="favicon.ico" type="image/x-icon" rel="shortcut icon">
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+  <link href="https://anijs.github.io/lib/anicollection/anicollection.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navigation menu on top of every page -->
+  <div class="navBar">
+    <div class ="container">
+      <!-- Navigation bar -->
+      <div class="nav" id="navResponsive">
+        <!-- Logo -->
+        <div class="navBlock">
+          <a href="index.html"><img src="image/icon.png"/><p>ORSON CHENG</p></a>
+        </div>
+        <!-- Hamburger icon for mobile -->
+        <a href="javascript:void(0);" class="icon" id="menuIcon" onclick="navExpand()"><img src="image/hamIcon.png"/></a>
+        <div class="navLinks">
+          <!-- Navbar options -->
+          <a href="index.html">Home</a>
+          <a href="index.html#contact">Contact</a>
+          <a href="resume.pdf" target="_blank">Resume</a>
+          <a href="http://www.orsonchengdesign.com/" target="_blank">
+            Design Work</a>
+        </div>
+      </div>
+    <!-- Closing nav container -->
+    </div>
+  </div>
+
+  <!-- Content Grid -->
+  <div class="bodyGrid">
+
+    <!-- Title Panel -->
+    <div class="titlePanel">
+      <h1>Hoop Bank</h1>
+      <h2>Web App for Athletic Statistics</h2>
+      <h3><a href="https://github.com/AlexNarayanan/HoopBank"
+        target="_blank">Code found <span class="h3Bold">here</span></a></h3>
+      <img src="image/hb/intro-banner.png" />
+    </div>
+
+    <!-- Gist Panel -->
+    <div class="gistPanel">
+      <h4>The Gist</h4>
+      <p>My buddy and I made Hoop Bank for those who did not like the clutter of
+        existing sport databases (such as myself). While I do not argue that there
+        are a lot of stats that need to be expressed in the realm of sports and
+        athletes, the core statistics of a basketball player are very rudimentary
+        and need little embellishment. Especially in the setting of a fantasy
+        draft, information such as the year of the player's debut or their home
+        town hold no weight in the decision process, and as such, I wanted to
+        create a streamlined, no-nonsense process that would lead the users to the
+        stats as fast as possible.</p>
+      <div data-anijs="if: scroll, on: window, do: fadeInUp animated, before: $scrollReveal">
+        <img src="image/hb/scrs.png" />
+      </div>
+    </div>
+
+    <!-- Problems Panel -->
+    <div class="probPanel">
+      <h4>UI/UX Problems</h4>
+      <p>As both big fans of basketball and the NBA, my friend Alex and I follow
+        the players and teams to keep track of how each player and team is doing.
+        The problem with this is, the official source of data where one can track
+        this, <a href="https://www.nba.com/" target="_blank"><span class="boldp">
+        NBA.com</span></a>, struggles with putting the barebones numbers for the stats
+        of a player across multiple seasons, and even teams. As a result, we set
+        forth to create a tool for those looking to find a straightforward and
+        clean way of looking up these statistics for a player or for players of a
+        team.<br><br>The problems that came with this was condensing a difficult
+        process that involved a lot of information into a condensed and
+        streamlined experience for the user.</p>
+      <div data-anijs="if: scroll, on: window, do: fadeInUp animated, before: $scrollReveal">
+        <img src="image/hb/problem.png" />
+      </div>
+    </div>
+
+    <!-- Solutions Panel -->
+    <div class="solPanel">
+      <h4>UI/UX Solutions</h4>
+      <p>To create a streamlined process for the user, a large part of the work
+        was put into creating the database behind the web app. Creating a cohesive
+        foundation in the information architecture was the grounds for creating an
+        intuitive flow of information for the user to intake, and once that was
+        figured out, I merely sought to minimise the extra, unnecessary steps in
+        between. I start the user's process with a simple search, and then allow
+        the teams and players to be linked to each other within a single click.
+        The rest was simply applying a design system that would emphasize the
+        important stats that the user wanted, and the items that could be
+        interacted with.</p>
+    </div>
+
+    <!-- Experience Flow Panel -->
+    <div class="xpfPanel">
+      <h4>Experience Flow</h4>
+      <p>For our application, we sought to create a fluid process that was
+        intuitive for users to look up statistics. In a clutch situation where
+        fantasy drafts are on the line, nobody wants to be sitting around
+        perusing through walls of text to find the information that they need.
+        I wanted the experience of using the application to be simple and
+        straightforward, allowing for ease of navigation between places that the
+        user might want to see.<br><br>The user starts the experience at the
+        landing page, with nothing to interact with other than the search bar.
+        A search can be for a player or for a team, and be it the former, the
+        user is led to the table fo stats for the player. Should the user search
+        for the latter, or select the team on the player page they landed on,
+        the user is led to a screen with a list of the active players on the
+        team's roster. The two types of pages are always just a click away from
+        each other, so as to streamline the process.</p>
+      <div data-anijs="if: scroll, on: window, do: fadeInUp animated, before: $scrollReveal">
+        <img src="image/hb/xpFlow.png" />
+      </div>
+    </div>
+
+    <!-- Flash Card Graphic Panel -->
+    <div class="imgPanel">
+      <h4>Visual Design System</h4>
+      <p>Visually, I wanted the visuals to focus on the important information -
+        the numbers. The numbers are the largest text on screen aside from the
+        player/team name.<br><br>As type is the meat of the content, I put a lot
+        of the emphasis on the designing on how the type was used. I selected from
+        the red/white/blue palette of the NBA, and designated the red <span id="hbRed">
+        (#b62025)</span> to be used for text that would link to other pages.
+        Blue <span id="hbBlue">(#0062ab)</span> is reserved for informative
+        text, such as what a number denotes (is this "13.8" the average for the
+        points, rebounds, or assists?) and the name of the currently searched
+        player or team.</p>
+      <div data-anijs="if: scroll, on: window, do: fadeInUp animated, before: $scrollReveal">
+        <img src="image/hb/vis1.png" />
+      </div>
+      <div data-anijs="if: scroll, on: window, do: fadeInUp animated, before: $scrollReveal">
+        <img src="image/hb/vis2.png" />
+      </div>
+    </div>
+
+    <!-- Icon Set Panel -->
+    <div class="icnPanel">
+      <h4>The Database</h4>
+      <p>We designed the database schema to be one in which the user could navigate
+        between the two types of data (players and teams) with ease. Seen here in
+        the UML diagram, the player has an identifying ID (pid) integer, and has
+        fields for the player's name (pname), position (position), and jersey number
+        (number). The team has two fields, one for the team's identifying number (tid),
+        and the other for the team's name (tname). The "player_stats_by_year,"
+        displayed within the "players" page on the app, then provides different stats
+        for the player by displaying which pid to display for and for which tid the
+        player's numbers were for, and having the stats show for each field
+        (points/rebounds/assists). Under the "teams" pages on the app, the "roster"
+        contains the field tid to know which team to display for, and a pid to display.
+        <br><br>On the side you will find the "users" table. This table was meant
+        expressly for admins of the console to manually insert, delete, or update
+        existing tables within the database.</p>
+      <div data-anijs="if: scroll, on: window, do: fadeInUp animated, before: $scrollReveal">
+        <img src="image/hb/schema.png" />
+      </div>
+      <p>Interfacing with the databse can be done for two types of users, the admin
+        or the general user. The general user submits a form for their search query,
+        and is able to receive their desired information or follow links to other pages.
+        The admin is able to update the database, either by modifying existing entries,
+        or adding/deleting entries.</p>
+    </div>
+
+    <!-- Other Projects Panel -->
+    <div class="projPanel">
+      <a href="index.html"><h5>Home</h5></a>
+      <a href="neuranode.html"><h5>Neuranode</h5></a>
+      <a href="nyehdao.html"><h5>Nyeh Dao!</h5></a>
+      <a href="views.html"><h5>VIEWS Puzzle Game</h5></a>
+      <a href="trubadour.html"><h5>Trubadour</h5></a>
+      <a href="hoopbank.html"><h5><span class="red">Hoop Bank</span></h5></a>
+      <a href="ocd.html"><h5>Orson Cheng Design</h5></a>
+    </div>
+
+  <!-- Closing Grid Div -->
+  </div>
+
+  <!-- To AniJS, thank you very muchj ;) -->
+  <script src="https://anijs.github.io/lib/anijs/anijs.js"></script>
+  <script src="https://anijs.github.io/lib/anijs/helpers/scrollreveal/anijs-helper-scrollreveal.js"></script>
+
+  <!-- Script for NavBar Icon -->
+  <script>
+    function navExpand() {
+      var x = document.getElementById("navResponsive");
+
+      if (x.className !== "navBlock") {
+        if (x.className === "nav") {
+          x.className += " expanded";
+        } else {
+          x.className = "nav";
+        }
+      }
+    }
+  </script>
+
+</body>
+
+</html>

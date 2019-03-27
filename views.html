@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>VIEWS Puzzle Game | Orson Cheng</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="css/style2.css" type="text/css" rel="stylesheet">
+  <link href="favicon.ico" type="image/x-icon" rel="shortcut icon">
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+  <link href="https://anijs.github.io/lib/anicollection/anicollection.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navigation menu on top of every page -->
+  <div class="navBar">
+    <div class ="container">
+      <!-- Navigation bar -->
+      <div class="nav" id="navResponsive">
+        <!-- Logo -->
+        <div class="navBlock">
+          <a href="index.html"><img src="image/icon.png"/><p>ORSON CHENG</p></a>
+        </div>
+        <!-- Hamburger icon for mobile -->
+        <a href="javascript:void(0);" class="icon" id="menuIcon" onclick="navExpand()"><img src="image/hamIcon.png"/></a>
+        <div class="navLinks">
+          <!-- Navbar options -->
+          <a href="index.html">Home</a>
+          <a href="index.html#contact">Contact</a>
+          <a href="resume.pdf" target="_blank">Resume</a>
+          <a href="http://www.orsonchengdesign.com/" target="_blank">
+            Design Work</a>
+        </div>
+      </div>
+    <!-- Closing nav container -->
+    </div>
+  </div>
+
+  <!-- Content Grid -->
+  <div class="bodyGrid">
+
+    <!-- Title Panel -->
+    <div class="titlePanel">
+      <h1>VIEWS Puzzle Game</h1>
+      <h2>Puzzle Game for PC</h2>
+      <h3><a href="https://www.viewspuzzlegame.com/"
+        target="_blank">Game demo found <span class="h3Bold">here</span></a></h3>
+      <img src="image/vpg/intro-banner.png" />
+    </div>
+
+    <!-- Gist Panel -->
+    <div class="gistPanel">
+      <h4>The Gist</h4>
+      <p>VIEWS is an ongoing project that I started with my buddy Shixin Nie.
+        VIEWS was designed as a game that would respect the players'
+        intelligence and nothhold the player's hands throughout the gameplay. To
+        accomplish this, I stripped away all forms of UI or UX that I deemed
+        unnecessary to learning the game, instead striving to teach the mechanics
+        of the game through elements embedded within the game itself (such as the
+        visual and sound assets found within the game). VIEWS was made to provide
+        an experience that would nurture players into finding the eureka moment
+        while playing the game without intrusively bombarding the players with
+        instructions. The game has since been showcased at the
+        <a href="https://www.eventbrite.com/e/pregamer-pax-east-edition-tickets-41423841826"
+          target="_blank"><span class="boldp">2018 PAX East PreGamer Showcase</span></a>.</p>
+      <div data-anijs="if: scroll, on: window, do: fadeInUp animated, before: $scrollReveal">
+        <img src="image/vpg/scrs1.png" />
+      </div>
+      <div data-anijs="if: scroll, on: window, do: fadeInUp animated, before: $scrollReveal">
+        <img src="image/vpg/scrs2.png" />
+      </div>
+      <div data-anijs="if: scroll, on: window, do: fadeInUp animated, before: $scrollReveal">
+        <img src="image/vpg/scrs3.png" />
+      </div>
+      <div data-anijs="if: scroll, on: window, do: fadeInUp animated, before: $scrollReveal">
+        <img src="image/vpg/scrs4.png" />
+      </div>
+    </div>
+
+    <!-- Problems Panel -->
+    <div class="probPanel">
+      <h4>UI/UX Problems</h4>
+      <p>There is a difficult-to-find "sweet spot" in the amount of instructions
+        a game gives that makes the difficulty curve of the game just engaging
+        enough to play, but not so difficult that players become aggravated and
+        give up. In a game like this, where controls are relatively simple and
+        the eureka moment comes in discovering the various puzzle mechanics of
+        the game, I deemed it best to keep the hand-holding of the game to a
+        minimal.<br><br>The toughest challenge in this project was creating a
+        coherent experience that would achieve this effect, giving just enough
+        guidance to the player without revealing too much.</p>
+      <div data-anijs="if: scroll, on: window, do: fadeInUp animated, before: $scrollReveal">
+        <img src="image/vpg/problem.png" />
+      </div>
+    </div>
+
+    <!-- Solutions Panel -->
+    <div class="solPanel">
+      <h4>UI/UX Solutions</h4>
+      <p>To create this coherent experience, I worked with multiple elements in
+        the game itself to create the intended experience.<br><br>One of the key
+        challenges to tackle was the level design itself. To produce a constant
+        stream of satisfying challenges for the user to complete, we arranged to
+        have the game introduce different game mechanics steadily as the player
+        worked on honing their mastery over ones they knew already.<br><br>In
+        terms of the UI itself, I had a majority of the instructional HUDs
+        stripped from the game, and created a system of color use to denote
+        different types of interactions. I designed each element within the game
+        with the purpose of not only aesthetically reinforcing the theme of a dream-like
+        puzzle setting, but more importantly, to communicate differences to the
+        user so that they may better understand how to interact with the game elements.
+        I also chose to employ specific sounds to serve as non-visual cues for the
+        players to understand different game events. Together, these factors served
+        to create an experience that could better immerse the player into the
+        dreamlike setting of the game while preserving the intended difficulty
+        curve of the game.</p>
+    </div>
+
+    <!-- Experience Flow Panel -->
+    <div class="xpfPanel">
+      <h4>Experience Flow</h4>
+      <p>While the UI/UX solutions created solutions to solving the problems we
+        had at every moment, the specific moments in the game were dictated by
+        the levels that we introduced into the game itself. The introduction and
+        review of the puzzles are integral to the user experience of the game's
+        progression, and this level flow chart demonstrates exactly <em>how</em>
+        the puzzles are introduced into the game.</p>
+      <div data-anijs="if: scroll, on: window, do: fadeInUp animated, before: $scrollReveal">
+        <img src="image/vpg/xpFlow.png" />
+      </div>
+    </div>
+
+    <!-- Flash Card Graphic Panel -->
+    <div class="imgPanel">
+      <h4>Visual Design System</h4>
+      <p>I designed each element that went into the game with the purpose of
+        informing the user on different types of interactions. In the game, the
+        player is not prompted through instructions when a new challenge arrives.
+        Rather, elements in a new visual style are introduced, and the players are
+        encouraged to experiment with these elements as they please.<br><br>
+        For the most part, I sought to create simple visuals to give more
+        emphasis to the visual aspect of the gameplay, and to assist in the
+        logistical limitations of a two-person team. The master style guide for
+        all the artistic direction of the game can be found in my
+        <a href="http://www.orsonchengdesign.com/gameart/" target="_blank">
+        <span class="boldp">graphic design site</span></a>, where all the elements
+        and their visuals are explained in greater detail.<br><br>I designed the
+        elements within the game to have specific colors and looks to denote their
+        purpose. Regular, walkable platforms would be dark on the sides with a
+        solid color on top, or light on the sides in the mirror world. Doors would
+        lose the dark/light colored sides, and would instead be fully colored,
+        while mirror portal blocks were made denoted by dark blocks with glowing
+        edges. Adherence to the color and visual guides was integral to showing
+        users when a new type of interaction was available, while providing a way
+        to help users identify different methods of interaction with the game.<br>
+        <br>Specifics to the visual system will be more understandable as
+        <a href="https://www.viewspuzzlegame.com/demo.html" target="_blank"><span class="boldp">
+        the game is played</span></a>.</p>
+      <div data-anijs="if: scroll, on: window, do: fadeInUp animated, before: $scrollReveal">
+        <img src="image/vpg/vis1.png" />
+      </div>
+      <div data-anijs="if: scroll, on: window, do: fadeInUp animated, before: $scrollReveal">
+        <img src="image/vpg/vis2.png" />
+      </div>
+      <div data-anijs="if: scroll, on: window, do: fadeInUp animated, before: $scrollReveal">
+        <img src="image/vpg/vis3.png" />
+      </div>
+      <div data-anijs="if: scroll, on: window, do: fadeInUp animated, before: $scrollReveal">
+        <img src="image/vpg/vis4.png" />
+      </div>
+    </div>
+
+    <!-- Other Projects Panel -->
+    <div class="projPanel">
+      <a href="index.html"><h5>Home</h5></a>
+      <a href="neuranode.html"><h5>Neuranode</h5></a>
+      <a href="nyehdao.html"><h5>Nyeh Dao!</h5></a>
+      <a href="views.html"><h5><span class="red">VIEWS Puzzle Game</span></h5></a>
+      <a href="trubadour.html"><h5>Trubadour</h5></a>
+      <a href="hoopbank.html"><h5>Hoop Bank</h5></a>
+      <a href="ocd.html"><h5>Orson Cheng Design</h5></a>
+    </div>
+
+  <!-- Closing Grid Div -->
+  </div>
+
+  <!-- To AniJS, thank you very muchj ;) -->
+  <script src="https://anijs.github.io/lib/anijs/anijs.js"></script>
+  <script src="https://anijs.github.io/lib/anijs/helpers/scrollreveal/anijs-helper-scrollreveal.js"></script>
+
+  <!-- Script for NavBar Icon -->
+  <script>
+    function navExpand() {
+      var x = document.getElementById("navResponsive");
+
+      if (x.className !== "navBlock") {
+        if (x.className === "nav") {
+          x.className += " expanded";
+        } else {
+          x.className = "nav";
+        }
+      }
+    }
+  </script>
+
+</body>
+
+</html>
