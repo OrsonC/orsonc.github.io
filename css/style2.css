@@ -399,6 +399,7 @@
 	@media screen and (min-width: 1281px) {
 		/* Text */
 		.boldp {
+			color: #000000;
 			font-weight: 700;
 			transition: color 0.2s ease;
 		}
