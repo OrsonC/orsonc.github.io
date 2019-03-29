@@ -5,7 +5,7 @@
 
 	body {
 		display: block;
-		font-family: "Futura PT", "Nunito", sans-serif;
+		font-family: "Nunito", sans-serif;
 		color: #000000;
 		background-color: #ffffff;
 		position: absolute;
@@ -16,7 +16,7 @@
 
 	/* Page Title */
 	h1 {
-		font-family: "Futura PT", "Nunito", sans-serif;
+		font-family: "Nunito", sans-serif;
 		font-weight: 600;
 		font-size: 70pt;
 		color: #000000;
@@ -26,7 +26,7 @@
 
 	/* Page Subtitle */
 	h2 {
-		font-family: "Futura PT", "Nunito", sans-serif;
+		font-family: "Nunito", sans-serif;
 		font-weight: 400;
 		font-size: 30pt;
 		color: #000000;
@@ -35,7 +35,7 @@
 
 	/* Title Links */
 	h3 {
-		font-family: "Futura PT", "Nunito", sans-serif;
+		font-family: "Nunito", sans-serif;
 		font-weight: 500;
 		font-size: 25pt;
 		color: #000000;
@@ -48,7 +48,7 @@
 
 	/* Section Titles */
 	h4 {
-		font-family: "Futura PT", "Nunito", sans-serif;
+		font-family: "Nunito", sans-serif;
 		font-weight: 600;
 		font-size: 30pt;
 		color: #000000;
@@ -57,7 +57,7 @@
 
 	/* Links Titles */
 	h5 {
-		font-family: "Futura PT", "Nunito", sans-serif;
+		font-family: "Nunito", sans-serif;
 		font-weight: 600;
 		font-size: 18pt;
 		color: #7F7F7F;
@@ -139,7 +139,7 @@
 
 	/* Main Content */
 	p {
-		font-family: "Futura PT", "Nunito", sans-serif;
+		font-family: "Nunito", sans-serif;
 		font-weight: 350;
 		font-size: 17pt;
 		color: #000000;
@@ -255,14 +255,34 @@
 
 	/* @Media Queries for navigation bar to show icon when under 900px */
 	@media screen and (max-width: 814px) {
+		h1 {
+			font-size: 58pt;
+		}
+
+		h2 {
+			font-size: 25pt;
+		}
+
+		h3 {
+			font-size: 18pt;
+		}
+
+		h4 {
+			font-size: 25pt;
+		}
+
+		p {
+			font-size: 14pt;
+		}
+
 		.navBlock img {
 			margin-top: 18px;
-			height: 50px;
+			height: 40px;
 		}
 
 		.navBlock p {
-			margin-top: 12px;
-			font-size: 38pt;
+			margin-top: 15px;
+			font-size: 25pt;
 		}
 
 		#menuIcon {
@@ -273,7 +293,7 @@
 		}
 
 		#menuIcon img {
-			height: 50px;
+			height: 40px;
 			transition: transform 0.2s ease;
 		}
 
@@ -282,12 +302,12 @@
 		}
 
 		.navLinks {
-			margin: 60px 0px 10px 0;
+			margin: 10px 0px 10px 0;
 			display: block;
 		}
 
 		.navLinks a {
-			padding: 10px;
+			padding: 3px;
 			display: none;
 		}
 
@@ -296,7 +316,6 @@
 		}
 
 		.nav.expanded a {
-			font-size: 24pt;
 			float: none;
 			display: block;
 			text-align: left;
@@ -364,7 +383,7 @@
 	}
 
 	.ocdImgDemo img {
-		width: 500px;
+		width: 350px;
 		box-shadow: 5px 5px 15px #000000;
 	}
 
@@ -375,7 +394,7 @@
 
 	#imgDemoCapt p {
 		font-weight: 400;
-		font-size: 24pt;
+		font-size: 16pt;
 		text-align: left;
 		margin-top: 1em;
 		padding: 1em;
@@ -393,6 +412,10 @@
 
 		transform: scale(1.0);
 		transition: all 0.2s ease-in;
+	}
+
+	.projPanel h5 {
+		margin: 5px;
 	}
 
 	/* @Media Queries for non-mobile devices */
