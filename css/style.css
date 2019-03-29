@@ -37,7 +37,7 @@
 	p {
 		font-family: "Nunito", sans-serif;
 		font-weight: 350;
-		font-size: 21pt;
+		font-size: 19pt;
 		color: #000000;
 	}
 
@@ -150,7 +150,7 @@
 	}
 
 	/* @Media Queries for navigation bar to show icon when under 900px */
-	@media screen and (max-width: 814px) {
+	@media screen and (max-width: 846px) {
 		.navBlock img {
 			margin-top: 18px;
 			height: 40px;
@@ -158,7 +158,7 @@
 
 		.navBlock p {
 			margin-top: 15px;
-			font-size: 25pt;
+			font-size: 24pt;
 		}
 
 		#menuIcon {
@@ -178,7 +178,7 @@
 		}
 
 		.navLinks {
-			margin: 10px 0 10px 0;
+			margin: 60px 0 10px 0;
 			display: block;
 		}
 
