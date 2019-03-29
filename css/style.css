@@ -5,7 +5,7 @@
 
 	body {
 		display: block;
-		font-family: "Futura PT", "Nunito", sans-serif;
+		font-family: "Nunito", sans-serif;
 		color: #000000;
 		background-color: #e0e0e0;
 		position: absolute;
@@ -14,28 +14,28 @@
 
 	/* Type Settings */
 	h1 {
-		font-family: "Futura PT", "Nunito", sans-serif;
+		font-family: "Nunito", sans-serif;
 		font-weight: 600;
 		font-size: 60pt;
 		color: #000000;
 	}
 
 	h2 {
-		font-family: "Futura PT", "Nunito", sans-serif;
+		font-family: "Nunito", sans-serif;
 		font-weight: 500;
 		font-size: 4vw;
 		color: #000000;
 	}
 
 	h3 {
-		font-family: "Futura PT", "Nunito", sans-serif;
+		font-family: "Nunito", sans-serif;
 		font-weight: 300;
 		font-size: 35pt;
 		color: #000000;
 	}
 
 	p {
-		font-family: "Futura PT", "Nunito", sans-serif;
+		font-family: "Nunito", sans-serif;
 		font-weight: 350;
 		font-size: 21pt;
 		color: #000000;
@@ -153,12 +153,12 @@
 	@media screen and (max-width: 814px) {
 		.navBlock img {
 			margin-top: 18px;
-			height: 50px;
+			height: 40px;
 		}
 
 		.navBlock p {
-			margin-top: 12px;
-			font-size: 38pt;
+			margin-top: 15px;
+			font-size: 25pt;
 		}
 
 		#menuIcon {
@@ -169,7 +169,7 @@
 		}
 
 		#menuIcon img {
-			height: 50px;
+			height: 40px;
 			transition: transform 0.2s ease;
 		}
 
@@ -178,12 +178,12 @@
 		}
 
 		.navLinks {
-			margin: 60px 0 10px 0;
+			margin: 10px 0 10px 0;
 			display: block;
 		}
 
 		.navLinks a {
-			padding: 10px;
+			padding: 3px;
 			display: none;
 		}
 
