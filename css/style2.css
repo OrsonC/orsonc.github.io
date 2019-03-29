@@ -253,6 +253,11 @@
 
 	/* @Media Queries for navigation bar to show icon when under 900px */
 	@media screen and (max-width: 846px) {
+		.bodyGrid {
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(620px, 1fr));
+		}
+
 		h1 {
 			font-size: 45pt;
 		}
@@ -329,7 +334,7 @@
 	/* Body Grid */
 	.bodyGrid {
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(620px, 1fr));
+		grid-template-columns: 0, 100%;
 	}
 
 	.bodyGrid img {
